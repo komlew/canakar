@@ -2,7 +2,7 @@
 <head>
   <title>Can Akar, Head of Uber EMEA Marketing</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="description" content="Marketing Executive with track record for building top performing marketing teams, setting the vision and inspiring them to do career defining work that delivers strong business impact.">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="canonical" href="https://canakar.com/">
@@ -24,7 +24,10 @@
     body {
       margin: 0;
       display: flex;
-      overflow-x: hidden;
+      width: 100vw;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+      overflow: hidden;
       background-color: #000;
     }
     h1 {
@@ -54,6 +57,12 @@
     a {
       text-decoration: none;
       color: inherit;
+    }
+    img {
+      width: 100vw;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+      object-fit: contain;
     }
     @media (min-aspect-ratio: 1/1) {
       img {
